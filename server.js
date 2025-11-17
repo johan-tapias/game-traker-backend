@@ -15,7 +15,7 @@ app.use(express.json());
 
 // Rutas principales
 app.use("/api/juegos", juegosRoutes);
-app.use("/api/reseñas", reseñasRoutes);
+app.use("/api/resenas", reseñasRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

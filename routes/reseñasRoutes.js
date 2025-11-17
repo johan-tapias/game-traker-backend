@@ -11,8 +11,8 @@ import {
 const router = express.Router();
 
 router.get("/", obtenerReseñas);
-router.get("/:id", obtenerReseña);
 router.get("/juego/:juegoId", obtenerReseñasPorJuego);
+router.get("/:id", obtenerReseña);
 router.post("/", crearReseña);
 router.put("/:id", actualizarReseña);
 router.delete("/:id", eliminarReseña);
